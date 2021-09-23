@@ -1,5 +1,6 @@
 require('babel-register');
 require('babel-polyfill');
+require('dotenv').config();
 
 module.exports = {
   networks: {
@@ -12,11 +13,12 @@ module.exports = {
   contracts_directory: './src/contracts/',
   contracts_build_directory: './src/abis/',
   compilers: {
-    solc: {
-      optimizer: {
-        enabled: true,
-        runs: 200
-      }
+    solc: { 
+      version: "pragma",
+        optimizer: {
+          enabled: true,
+          runs: 200
+        }
     }
   }
 }
