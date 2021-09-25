@@ -1,13 +1,21 @@
 pragma solidity ^0.8.7;
 
+import //DAI
+import //compound
+import //aave
+
+
 contract Yieldagg {
-// state variables
+	using SafeMath for uint;
+
+
+	// state variables
 	
+	
+	// Events
 	
 
-	
-
-	//constructor() public {   ?
+	// constructor() public {   ?
 
 	//}
 
@@ -17,7 +25,6 @@ contract Yieldagg {
 	function deposit() external payable {
    		Yieldagg.transfer(msg.value); ????
 	}
-
 
 
 
